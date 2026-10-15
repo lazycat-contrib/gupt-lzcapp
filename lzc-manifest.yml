@@ -1,0 +1,25 @@
+application:
+  subdomain: gupt
+  background_task: true
+  multi_instance: false
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://gupt:8000/
+
+services:
+  gupt:
+    # upstream: ghcr.io/besoeasy/gupt:5.1.5
+    image: ghcr.1ms.run/besoeasy/gupt:5.1.5
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - -q
+        - --spider
+        - http://127.0.0.1:8000/
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

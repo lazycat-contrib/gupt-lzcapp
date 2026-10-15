@@ -1,0 +1,15 @@
+package: community.lazycat.app.gupt
+version: 5.1.5
+name: GUPT
+description: "Self-hosted end-to-end encrypted messenger"
+min_os_version: 1.5.0
+author: besoeasy
+license: LicenseRef-None
+homepage: https://github.com/besoeasy/gupt
+locales:
+  zh:
+    name: "GUPT"
+    description: "自托管端到端加密即时通讯：隐私优先，可自建基础设施"
+  en:
+    name: "GUPT"
+    description: "Self-hosted, end-to-end encrypted messenger. A privacy-first alternative to Telegram, Signal, WhatsApp and Discord"
