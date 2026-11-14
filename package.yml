@@ -1,5 +1,5 @@
 package: community.lazycat.app.gupt
-version: 6.0.0
+version: 6.0.1
 name: GUPT
 description: "Self-hosted end-to-end encrypted messenger"
 min_os_version: 1.5.0
