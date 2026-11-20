@@ -9,8 +9,8 @@ application:
       backend: http://gupt:8000/
 services:
   gupt:
-    # upstream: ghcr.io/besoeasy/gupt:6.1.34
-    image: ghcr.1ms.run/besoeasy/gupt:6.1.34
+    # upstream: ghcr.io/besoeasy/gupt:6.2.5
+    image: ghcr.1ms.run/besoeasy/gupt:6.2.5
     healthcheck:
       test:
         - CMD
